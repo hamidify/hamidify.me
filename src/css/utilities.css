@@ -55,7 +55,7 @@ h2::selection {
   cursor: pointer;
 }
 
-.toggle-icons > img {
+.toggle-icons>img {
   transition: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
   width: 30px;
 }
@@ -64,11 +64,11 @@ h2::selection {
   transform: rotate(10deg);
 }
 
-#switch:checked + .toggle-icons .moon {
+#switch:checked+.toggle-icons .moon {
   transform: rotate(250deg);
 }
 
-#switch:checked + .toggle-icons .sun {
+#switch:checked+.toggle-icons .sun {
   transform: rotate(100deg);
 }
 
@@ -82,7 +82,7 @@ h2::selection {
   padding: 1rem;
 }
 
-.header-container > div {
+.header-container>div {
   margin-top: 1rem;
 }
 
@@ -108,9 +108,10 @@ h2::selection {
   padding: 1rem;
   background: var(--card-background);
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 20px;
   transition: 0.4s ease-in-out;
-  cursor: pointer;
+  /* cursor: pointer; */
+  border: 1px solid #efefef;
 }
 
 .card a {
@@ -120,12 +121,16 @@ h2::selection {
   margin-right: 0.3rem;
 }
 
+.card h3 a {
+  font-size: 1rem;
+}
+
 .card a:hover {
   color: var(--primary-color);
 }
 
 .card:hover {
-  box-shadow: inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 200px 1000px 10px rgba(0, 0, 0, 0.99999);
 }
 
 .card:hover .project-info {
@@ -136,32 +141,32 @@ h2::selection {
 
 /* project 1 */
 .card:nth-child(1) {
-  background: url(../assets/project/project-one.png) center center/cover;
+  background: url(../assets/project/ai-science.png) center center/cover;
 }
 
 /* Project 2 */
 .card:nth-child(2) {
-  background: url(../assets/project/project-two.png) center center/cover;
+  background: url(../assets/project/online-order.jpg) center center/cover;
 }
 
 /* Project 3 */
 .card:nth-child(3) {
-  background: url(../assets/project/project-three.png) center center/cover;
+  background: url(../assets/project/yg-cc-ap.png) center center/cover;
 }
 
 /* Project 4 */
 .card:nth-child(4) {
-  background: url(../assets/project/project-four.png) center center/cover;
+  background: url(../assets/project/crime-analysis.png) center center/cover;
 }
 
 /* Project 5 */
 .card:nth-child(5) {
-  background: url(../assets/project/project-five.png) center center/cover;
+  background: url(../assets/project/bluespace.png) center center/cover;
 }
 
 /* Project 6 */
 .card:nth-child(6) {
-  background: url(../assets/project/project-six.png) center center/cover;
+  background: url(../assets/project/mbrana.png) center center/cover;
 }
 
 /* Media Queries */

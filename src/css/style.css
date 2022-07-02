@@ -112,11 +112,6 @@ body {
   margin-right: 1.5rem;
 }
 
-.fas.fa-arrow-right {
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-}
-
 /* hamburger */
 .hamburger {
   margin-bottom: 0.1rem;
@@ -143,16 +138,31 @@ body {
 .profile-image {
   width: 150px;
   border-radius: 50%;
-  animation: bounce 1s infinite alternate;
+  animation: bounce 2s infinite alternate;
 }
 
 @keyframes bounce {
   from {
-    transform: translateY(0px);
+    transform: translateY(-3px);
   }
 
   to {
-    transform: translateY(-10px);
+    transform: translateY(3px);
+  }
+}
+
+
+.connect {
+  animation: shake 1s infinite alternate;
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(-3px);
+  }
+
+  to {
+    transform: translateX(3px);
   }
 }
 
@@ -162,6 +172,7 @@ body {
   background-color: var(--card-background);
   margin: 5.5rem 0;
 }
+
 /* Projects */
 #projects {
   display: flex;
@@ -202,45 +213,26 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  top: 160px;
+  top: 100px;
   left: 10px;
 }
 
-/* Footer */
-#footer {
-  background: #111111;
-}
-
-#footer .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  min-height: 160px;
-  text-align: center;
-}
-
-#footer a {
-  font-size: 0.8rem;
-  color: #fff;
-}
-
-#footer a:hover {
+.social a:hover {
   opacity: 0.6;
 }
 
-#footer .social {
+.social {
   margin: 0.9rem 0;
 }
 
-#footer .social img {
+.social img {
   width: 20px;
   height: 20px;
 }
 
-#footer .social a {
+.social a {
   margin: 0 0.5rem;
+  font-size: 2rem;
 }
 
 #footer p {
@@ -256,8 +248,7 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
 @media (max-width: 670px) {
   .navbar .nav-menu {

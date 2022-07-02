@@ -322,4 +322,8 @@ body {
     border-radius: 5px;
     width: 80%;
   }
+
+  .connect.btn {
+    width: 50%;
+  }
 }

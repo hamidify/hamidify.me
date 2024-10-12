@@ -1,1 +1,1 @@
-Houses source code for the site https://hamidify.me
+Houses source code for the site https://hamidify.xyz
